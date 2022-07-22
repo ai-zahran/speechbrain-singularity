@@ -4,7 +4,7 @@ FROM nvidia/cuda:11.4.1-devel-ubuntu20.04
 RUN apt-get update
 
 
-RUN ENV DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
     python3 \
     python3-pip
 
