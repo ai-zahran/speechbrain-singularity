@@ -4,10 +4,9 @@ FROM nvidia/cuda:11.4.1-devel-ubuntu20.04
 RUN apt-get update
 
 
-RUN apt-get install --assume-yes --no-install-recommends --quiet \
+RUN ENV DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
     python3 \
-    python3-pip \
-    ffmpeg
+    python3-pip
 
 
 RUN pip install --no-cache --upgrade pip setuptools
