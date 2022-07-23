@@ -24,5 +24,6 @@ RUN pip3 install numpy \
     h5py \
     speechbrain \
     pandas \
-    gdown
+    gdown \
+    TextGrid
 
