@@ -24,6 +24,7 @@ RUN pip3 install numpy \
     matplotlib \
     h5py \
     speechbrain \
+    orion \
     pandas \
     gdown \
     TextGrid
