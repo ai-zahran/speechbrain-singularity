@@ -6,7 +6,6 @@ RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
     python3 \
-    python3-pip \
     unzip \
     git-all
 
@@ -14,7 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
 RUN pip install --no-cache --upgrade pip setuptools
 
 
-RUN pip3 install numpy \
+RUN pip3 install --no-cache numpy \
     scikit-learn \
     torch \
     torchvision \
