@@ -1,17 +1,14 @@
-FROM nvidia/cuda:11.4.1-devel-ubuntu20.04
-
+FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
 RUN apt-get update
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
-    python3 \
     unzip \
     git-all
 
 RUN pip3 install --no-cache numpy \
     scikit-learn \
-    torch \
     torchvision \
     torchaudio \
     transformers \
