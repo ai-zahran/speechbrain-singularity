@@ -9,10 +9,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
     unzip \
     git-all
 
-
-RUN pip install --no-cache --upgrade pip setuptools
-
-
 RUN pip3 install --no-cache numpy \
     scikit-learn \
     torch \
