@@ -19,7 +19,8 @@ RUN pip3 install --no-cache numpy \
     orion \
     pandas \
     gdown \
-    TextGrid
+    TextGrid \
+    --extra-index-url https://download.pytorch.org/whl/cu116
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
